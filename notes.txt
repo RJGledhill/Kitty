@@ -1,0 +1,28 @@
+KITTY
+
+Quick test simulator to sketch out some ideas and structure of how a market simulator / trading software system would work
+Not playing with real market data, but with an invented fascimile.
+
+All stock data etc. in the form of sqlite3 databases.  Alphas too.
+
+
+Programs:
+
+(1) marketDataInventor
+	- A market M is made of N sectors, each divided into S stocks.
+	- The market is a brownian noise function added to a forcing function (e.g. has a steady upward slope over time) and has a prescribed volatility
+	- Each individual sector is in long term growth or decline and has a prescribed volatility (the market volatility multiplied by a constant
+	- Each individual stock has a volatility (the sector volatility multiplied by a constant)
+	- Step 1: create a market vector
+  - Step 2: plot graphs out for a visible report html page.
+
+-- Later on, start adding some sort of correlated version together.
+
+NEXT UP:
+
+* Calculate realised volatility (the square root of realised variance: see wikipedia for this) -- adjusted to give an annualised number
+
+
+
+
+
